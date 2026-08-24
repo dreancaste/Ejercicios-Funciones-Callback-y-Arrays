@@ -60,15 +60,15 @@ function chequear() {
     return "Soy un papanatas";
 }
 
-function reconfirmar(callback) {
-    return callback() + " y además programo en JavaScript";
+function reconfirmar() {
+    return "Soy un papanatas y ademas programo en JavaScript";
 }
 
-function evaluarSiSoyPapanatas(respuesta, chequear, reconfirmar) {
+function evaluarSiSoyPapanatas(respuesta, callback, callback1) {
     if (respuesta) {
-        return chequear();
+        return callback();
     } else {
-        return reconfirmar(chequear);
+        return callback1(callback);
     }
 }
 
