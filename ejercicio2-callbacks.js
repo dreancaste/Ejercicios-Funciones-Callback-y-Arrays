@@ -57,11 +57,11 @@ function numerosQueEstanEntreCeroYDiez(numeros) {
 let papanataSoy = false;
 
 function chequear() {
-    return "Sos un papanatas";
+    return "Soy un papanatas";
 }
 
 function reconfirmar(callback) {
-    return callback() + " y además programás en JavaScript";
+    return callback() + " y además programo en JavaScript";
 }
 
 function evaluarSiSoyPapanatas(respuesta, chequear, reconfirmar) {
@@ -73,3 +73,8 @@ function evaluarSiSoyPapanatas(respuesta, chequear, reconfirmar) {
 }
 
 // 5) Realizar una función que se llame validarIngreso, que reciba una edad, y una callback. Esta función debe validar por medio de un operador ternario si puede intregar o no (la condición es que sea mayor a 18 años). El resultado del operador ternario de debe pasar como argumento a la ejecución de la callback. (Podes elegir que hacer con la función callback que le vas a pasar por agumento a la función validarIngreso)
+
+function validarIngreso (edad, callback) {
+    let esMayor = edad >= 18 ? true : false
+    return callback(esMayor)
+}
